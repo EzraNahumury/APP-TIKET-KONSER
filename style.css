@@ -1,0 +1,454 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-image:  url("image.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar {
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 36px;
+    color: white;
+    font-weight:   bold;
+    width: 120px;
+    cursor: pointer;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a {
+    color: white;
+    text-transform: uppercase;
+}
+
+.navbar ul li::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: aqua;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover:after {
+    width: 100%;
+
+}
+
+.content{
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: white;
+    position: absolute;
+    transform: translateY(-50%);      
+}
+
+.content h1{
+    font-size: 80px;
+    margin-top: 80px;
+}
+
+.content p {
+    margin: 20px auto;
+    font-weight:100 ;
+    line-height: 25px;
+    position: relative;
+    top: 20px;
+}
+
+.form-group {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+
+
+.form-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+
+
+.searchForm {
+  width: 300px; /* Adjust width as needed */
+  margin: 20px auto; /* Centers the form horizontally */
+  padding: 15px;
+  display: flex; /* Makes form elements align horizontally */
+  flex-direction: column; /* Stacks elements vertically */
+  gap: 1px; /* Adds spacing between elements */
+  transform: translateX(-200%);
+}
+
+
+.form-label {
+  width: 80px; /* Adjust width of label as needed */
+  margin-right: 10px; /* Adds spacing between label and input */
+  transform: translateX(200%);
+  font-size: 20px;
+}
+
+
+.button {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-top: 10px;
+  align-self: center;
+}
+
+#searchByCategory {
+    height: 100%;
+    width: 0;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    position: absolute;
+    border-radius: 10px;
+    background: purple;
+    transition: 0.5s;
+   
+}
+
+span {
+    height: 100%;
+    width: 0;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    position: absolute;
+    border-radius: 10px;
+    background: purple;
+    transition: 0.5s;
+}
+
+button:hover span {
+    width: 100%;
+
+}
+
+button :hover {
+    border: none;
+}
+
+
+.search {
+    background-color: rgb(42, 25, 42);
+    height: 20px;
+    padding: 10px 15px;
+    border-radius: 50px;
+}
+
+.search input {
+    border: none;
+    outline: none;
+    background: none;
+}
+
+.search a {
+    color: aqua;
+}
+
+
+.searchForm {
+    position: relative;
+    left: 650px;
+    
+}
+
+.searchForm button {
+    background-color: purple;
+    width: 100px;
+    height: 50px;
+    position: relative;
+    top: 20px;
+    left: -20px;
+    border-radius: 20px;
+}
+
+.searchForm input {
+    border-radius: 10px;
+    width: 200px;
+    height: 20px;
+}
+
+.searchForm label {
+    position: relative;
+    left: -150px;
+    top: 20px;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+.sub-title{
+    text-align: center;
+    color: white;
+    font-size: 1.5em;
+    padding-top: 1rem;
+    position: relative;
+    top:650px;
+  }
+  .product .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem,0.5fr));
+    gap: 1rem;
+    position: relative;
+    top: 700px;
+  }
+  .product .box-container .box{
+    padding: 2.5rem;
+    background: rgba(206, 201, 212, 0.295);
+    border-radius: 0.5rem;
+    border: 0.1rem solid rgba(0,0,0,0.2);
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+  }
+  .product .box-container .box img{
+    margin-top: 10%;
+    width: 60%;
+    height: 50%;
+  }
+  .product .box-container .box .bx-heart,
+  .product .box-container .box .bx-shopping-bag,
+  .product .box-container .box .bx-search{
+    position: absolute;
+    top: 1.5rem;
+    border-radius: 50%;
+    height: 5rem;
+    width: 2rem;
+    line-height: 3rem;
+    font-size: 3rem;
+    color: black;
+  }
+  .product .box-container .box .bx-heart{
+    right: -15rem;
+  }
+  .product .box-container .box .bx-shopping-bag{
+    right:-12.5rem;
+  }
+  .product .box-container .box .bx-search{
+    left: -15rem;
+  }
+  .product .box-container .box .bx-heart:hover{
+    color: crimson;
+  }
+  .product .box-container .box .bx-shopping-bag:hover{
+    color: darkblue;
+  }
+  .product .box-container .box .bx-search:hover{
+  color:#ff0157 ;
+  }
+  .product .box-container .box:hover .bx-heart{
+    right: 1.5rem;
+  }
+  .product .box-container .box:hover .bx-shopping-bag{
+    right:12.5rem;
+  }
+  .product .box-container .box:hover .bx-search{
+    left: 1.5rem;
+  }
+  .title{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    color: wheat;
+    font-size: 2em;
+    font-weight: 300;
+    position: relative;
+    top: 600px;
+  }
+  .title span{
+    color: darkblue;
+    font-weight: 300;
+    font-size: 2em;
+    position: relative;
+    left: -50px;
+   
+  }
+  .btn1{
+    font-size: 1em;
+    display: inline-block;
+    color: black;
+    padding: 5px 15px;
+    margin-top: 2px;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    background-color: #e7b1c3;
+    border: 2px solid blue;
+    position: relative;
+    top: -20px;
+  }
+  .btn1:hover{
+    letter-spacing: 4px;
+    color: white;
+    background-color: crimson;
+    border: 2px solid black;
+  }
+  
+  .box h3 {
+      position: relative;   
+      top: -10px;
+  }
+  
+  span {
+      position: relative;
+      top: 10px;
+      color: aqua;
+  }
+  
+  p {
+      position: relative;
+      top: -3x;
+      color: rgb(232, 222, 222);
+  }
+  .box a {
+      position: relative;
+      top: 10px;
+  }
+  
+  .title span{
+      position: relative;
+      top: -10px;
+  }
+
+  
+
+  footer{
+    box-sizing: border-box;
+  }
+  .container{
+    max-width: 1170px;
+    margin:auto;
+  }
+  .row{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  ul{
+    list-style: none;
+  }
+  .footer{
+    background-color: rgb(56, 26, 56);
+    padding: 70px 0;
+    line-height: 1.5;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    top: 800px;
+  }
+  
+  .footer-col{
+     width: 25%;
+     padding: 0 15px;
+  }
+  .footer-col h4{
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+  }
+  .footer-col h4::before{
+    content: '';
+    position: absolute;
+    left:0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+  }
+  .footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+  }
+  .footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  .footer-col ul li a:hover{
+    color: #ffffff;
+    padding-left: 8px;
+  }
+  .footer-col .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255,255,255,0.2);
+    margin:0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+  }
+  .footer-col .social-links a:hover{
+    color: #24262b;
+    background-color: #ffffff;
+  }
+  
+  /*responsive*/
+  @media(max-width: 767px){
+    .footer-col{
+      width: 50%;
+      margin-bottom: 30px;
+  }
+  }
+  @media(max-width: 574px){
+    .footer-col{
+      width: 100%;
+  }
+  }
+
+  footer p {
+    letter-spacing: 10px;
+    text-align: center;
+  }
+  
